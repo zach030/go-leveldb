@@ -1,8 +1,8 @@
 package skiplist
 
 type Node struct {
-	key  interface{}
-	next []*Node
+	key  interface{}  // key,value存在一起
+	next []*Node      // 列向指针
 }
 
 func NewNode(key interface{}, height int) *Node {
