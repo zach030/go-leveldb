@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb41d87-a09c-4d3c-b0da-a24922bbebfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/skiplist/iterator.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skiplist/skiplist_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memtable/format.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memtable/memtable.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skiplist/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/skiplist/node.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skiplist/skiplist.go" beforeDir="false" afterPath="$PROJECT_DIR$/skiplist/skiplist.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +45,24 @@
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
+  <component name="RunManager">
+    <configuration name="Test_Insert in go-leveldb/skiplist" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-leveldb" />
+      <working_directory value="$PROJECT_DIR$/skiplist" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-leveldb/skiplist" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_Insert\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.Test_Insert in go-leveldb/skiplist" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -64,5 +81,16 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/skiplist/skiplist_test.go</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

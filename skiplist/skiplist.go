@@ -38,14 +38,18 @@ func (s *SkipList) Insert(key interface{}) {
 	_, prev := s.findGreaterOrEqualKey(key)
 	// 找到新插入后元素的每一层的前驱节点
 	height := s.randomHeight()
+	// 调整level
 	if height > s.maxHeight {
 		for i := s.maxHeight; i < height; i++ {
+			// 新增的节点的前驱是head指针
 			prev[i] = s.head
 		}
 		s.maxHeight = height
 	}
+	// 新建节点并插入
 	h := NewNode(key, height)
 	for i := 0; i < height; i++ {
+		// 逐层插入新节点
 		h.setNext(i, prev[i].getNext(i))
 		prev[i].setNext(i, h)
 	}
@@ -57,11 +61,13 @@ func (s *SkipList) findGreaterOrEqualKey(key interface{}) (*Node, [kMaxHeight]*N
 	h := s.head
 	level := s.maxHeight - 1
 	for true {
+		// 同层横向查找,该层中下一个节点
 		next := h.getNext(level)
-		// 向下一级
 		if s.keyIsAfterNode(key, next) {
+			// 待查找 key 比 next 大，则在该层继续查找
 			h = next
 		} else {
+			// 跳到下一级，记录prev指针（查找的路径）
 			prev[level] = h
 			// 找到最底层，next为目标节点
 			if level == 0 {
