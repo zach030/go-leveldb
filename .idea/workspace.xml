@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb41d87-a09c-4d3c-b0da-a24922bbebfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/memtable/format.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memtable/memtable.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skiplist/skiplist.go" beforeDir="false" afterPath="$PROJECT_DIR$/skiplist/skiplist.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memtable/format.go" beforeDir="false" afterPath="$PROJECT_DIR$/memtable/format.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memtable/memtable.go" beforeDir="false" afterPath="$PROJECT_DIR$/memtable/memtable.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/comparator.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/comparator.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

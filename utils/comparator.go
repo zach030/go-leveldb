@@ -1,5 +1,9 @@
 package utils
 
+import (
+	"bytes"
+)
+
 // a>b 1
 // a==b 0
 // a<b -1
@@ -17,4 +21,10 @@ func IntComparator(a, b interface{}) int {
 	default:
 		return 0
 	}
+}
+
+func UserKeyComparator(a,b interface{})int{
+	aK := a.([]byte)
+	bK := b.([]byte)
+	return bytes.Compare(aK,bK)
 }
